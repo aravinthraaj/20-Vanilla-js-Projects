@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500&display=swap');
+
 /******************************/
 /*  BASIC SETUP  */
 /******************************/
@@ -28,7 +31,7 @@ body {
 .col {
 	display: block;
 	float: left;
-	margin: 1% 0 1% 0.2%;
+	margin: 0% 0 0% 0%;
 }
 .col:first-child {
 	margin-left: 0;
@@ -68,4 +71,78 @@ body {
 	.span_1_of_3 {
 		width: 100%;
 	}
+}
+
+/***********************************/
+/* Header*/
+/***********************************/
+.section__header {
+	width: 100%;
+	height: 30vh;
+	position: relative;
+	margin-bottom: 8rem;
+	background-image: linear-gradient(
+		to right bottom,
+		rgb(203, 255, 193),
+		rgb(160, 255, 250)
+	);
+}
+.section__header--content {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+
+	transform: translate(-50%, -50%);
+}
+.section__header h1 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 5rem;
+	color: rgba(112, 109, 109, 0.87);
+	align-items: center;
+}
+
+.section__header p {
+	font-family: 'Dancing Script', cursive;
+	font-size: 2rem;
+	text-align: center;
+	color: rgb(255, 175, 27);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.project-display {
+	margin: 0;
+	overflow: hidden;
+	background-color: black;
+	position: relative;
+}
+.project-display h1 {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+.project-display:hover h1 {
+	color: azure;
+	visibility: visible;
+	/* transition: all 1s ease-in-out; */
+}
+.project-photo img {
+	width: 100%;
+	height: 40rem;
+	opacity: 1;
+	object-fit: cover;
+	transform: scale(1.1);
+	transition: all 0.5s ease-in-out;
+}
+
+.project-photo img:hover {
+	transform: scale(1.25);
+	transition: all 0.5s ease-in-out;
+	opacity: 0.7;
 }
