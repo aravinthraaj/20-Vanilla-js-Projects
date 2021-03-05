@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+/******************************/
+/*  BASIC SETUP  */
+/******************************/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	position: relative;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(to right bottom, #0fe2f1, #0de28a);
+}
+
+.section_form {
+	position: absolute;
+	display: block;
+	height: 45rem;
+	width: 30rem;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(248, 248, 248);
+	padding: 3rem;
+	border-radius: 1%;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+.section_form h1 {
+	text-align: center;
+	margin-bottom: 2rem;
+	color: rgb(117, 117, 117);
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+.form_item label {
+	display: block;
+	margin-bottom: 1rem;
+	color: rgb(117, 117, 117);
+	margin-left: 0.5rem;
+}
+
+.form_item input {
+	display: block;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	outline: none;
+	padding: 1rem 1rem;
+	border-radius: 3%;
+	border: none;
+}
+
+.form_item.error input {
+	border-bottom: 2px solid rgb(255, 34, 34);
+}
+.form_item.success input {
+	border-bottom: 2px solid rgb(23, 250, 23);
+}
+/* .form_item input:focus {
+	border-bottom: 2px solid rgb(23, 250, 239);
+} */
+
+.form_item small {
+	display: block;
+	margin-bottom: 1rem;
+	visibility: hidden;
+	color: rgb(255, 34, 34);
+}
+
+.form_item.error small {
+	visibility: visible;
+}
+.section_form button,
+button:link,
+button:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 1rem 4rem;
+	border-radius: 0.5rem;
+	display: block;
+	transition: all 0.2s;
+	width: 100%;
+	background-color: rgb(0, 174, 255);
+	border: none;
+	cursor: pointer;
+	margin-bottom: 1rem;
+	outline: none;
+	color: white;
+}
+
+.section_form button:hover {
+	transform: translateY(-0.2rem);
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.section_form button:active,
+button:focus {
+	transform: translateY(-0.1rem);
+	box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+}
