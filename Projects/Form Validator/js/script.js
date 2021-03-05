@@ -81,7 +81,7 @@ confirmPassword.addEventListener('keyup', function(){
     checkPassword(password, confirmPassword);
 })
 
-// form.addEventListener('submit', function(e){
-//     e.preventDefault();
-//     checkRequired([username,email,password,confirmPassword]);
-// });
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    checkRequired([username,email,password,confirmPassword]);
+});
