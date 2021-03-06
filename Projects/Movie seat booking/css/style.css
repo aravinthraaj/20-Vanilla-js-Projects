@@ -1,6 +1,7 @@
 /******************************/
 /*  BASIC SETUP  */
 /******************************/
+
 *,
 *::after,
 *::before {
@@ -10,9 +11,61 @@
 }
 
 html {
-	font-size: 62.5%;
+	font-size: 100%;
 }
 
 body {
 	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+}
+
+.seat-legend {
+	display: flex;
+}
+
+.seat {
+	width: 15px;
+	height: 15px;
+	margin-bottom: 3px;
+	margin-left: 3px;
+	border-top-left-radius: 40%;
+	border-top-right-radius: 40%;
+	background-color: blueviolet;
+}
+
+.row {
+	display: flex;
+}
+
+.seat.occupied {
+	background-color: coral;
+}
+
+.seat:nth-of-type(2) {
+	margin-right: 10px;
+}
+
+.seat:nth-last-of-type(2) {
+	margin-left: 13px;
+}
+nav ul {
+	display: flex;
+	width: 1000px;
+	justify-content: space-between;
+}
+
+.seat-legend ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.seat-legend li {
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
 }
