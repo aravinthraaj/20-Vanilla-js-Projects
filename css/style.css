@@ -127,7 +127,7 @@ body {
 	visibility: hidden;
 }
 
-.project-display:hover h1 {
+.project-display:hover a {
 	color: azure;
 	visibility: visible;
 	/* transition: all 1s ease-in-out; */
