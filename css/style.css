@@ -118,7 +118,7 @@ body {
 	background-color: black;
 	position: relative;
 }
-.project-display h1 {
+.project-display a {
 	left: 50%;
 	top: 50%;
 	position: absolute;
