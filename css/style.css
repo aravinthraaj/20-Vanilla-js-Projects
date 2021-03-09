@@ -120,7 +120,7 @@ header p {
 	);
 	border-radius: 1rem;
 	z-index: 2;
-	-webkit-backdrop-filter: blur(2rem);
+	-webkit-backdrop-filter: blur(4rem);
 	backdrop-filter: blur(4rem);
 	padding: 3rem;
 }
