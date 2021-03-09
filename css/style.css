@@ -113,15 +113,15 @@ header p {
 
 	min-height: 90vh;
 	width: 70%;
-	/* background: linear-gradient(
+	background: linear-gradient(
 		to right bottom,
-		rgba(255, 255, 255, 0.363),
-		rgba(255, 255, 255, 0.247)
-	); */
-	border-radius: 2rem;
+		rgba(255, 255, 255, 0.158),
+		rgba(255, 255, 255, 0.116)
+	);
+	border-radius: 1rem;
 	z-index: 2;
 	-webkit-backdrop-filter: blur(2rem);
-	backdrop-filter: blur(2rem);
+	backdrop-filter: blur(4rem);
 	padding: 3rem;
 }
 
