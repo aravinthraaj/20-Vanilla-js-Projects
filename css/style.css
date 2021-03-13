@@ -212,7 +212,7 @@ header p {
 	width: 70%;
 	min-height: 100vh;
 	position: relative;
-	background: -webkit-gradient(
+	/* background: -webkit-gradient(
 		linear,
 		left top,
 		right bottom,
@@ -228,7 +228,7 @@ header p {
 		to right bottom,
 		rgba(255, 255, 255, 0.363),
 		rgba(255, 255, 255, 0.247)
-	);
+	); */
 	border-radius: 0.7rem;
 	padding: 2rem;
 	top: 10%;
